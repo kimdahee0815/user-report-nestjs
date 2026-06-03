@@ -6,26 +6,29 @@ export class Report {
   @PrimaryGeneratedColumn()
   id!: number;
 
-  @Column()
-  price!: number;
+  @Column({ default: false })
+  approved: boolean;
 
   @Column()
-  location: string = '';
+  price: number;
 
   @Column()
-  model: string = '';
+  make: string;
 
   @Column()
-  year!: number;
+  model: string;
 
   @Column()
-  lng!: number;
+  year: number;
 
   @Column()
-  lat!: number;
+  lng: number;
 
   @Column()
-  mileage!: number;
+  lat: number;
+
+  @Column()
+  mileage: number;
 
   @ManyToOne(() => User, (user) => user.reports)
   user: User;
