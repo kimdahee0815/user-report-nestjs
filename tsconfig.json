@@ -21,7 +21,7 @@
     "noImplicitAny": false,
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
-    "types": ["jest", "node"],
-    "allowJs": true
+    "types": ["jest", "node"]
+    // "allowJs": true
   }
 }
